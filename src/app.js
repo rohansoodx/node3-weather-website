@@ -5,6 +5,7 @@ const geocode = require("./utils/geocode.js");
 const forecast = require("./utils/forecast.js");
 
 const app = express(); //express returns an app object
+const port = process.env.PORT || 3000;
 
 /*
 console.log(__dirname); //path to the where the script lives
@@ -115,6 +116,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("This method is called when the server starts!");
+app.listen(port, () => {
+  console.log("This method is called when the server starts! On: " + port);
 });
