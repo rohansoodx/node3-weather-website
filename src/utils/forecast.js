@@ -34,7 +34,7 @@ function forecast(latitude, longitude, callback) {
       callback("Unable to find location. Bad Lat & Long requested", undefined);
     } else {
       var x = body.currently;
-      var y = `Summary: ${body.daily.data[0].summary} | There is a ${x.precipProbability}% chance of rain | The temperature is ${x.temperature} degrees outside.`;
+      var y = `Summary: ${body.daily.data[0].summary} || There is a ${x.precipProbability}% chance of rain || The temperature is ${x.temperature} degrees outside.`;
       callback(undefined, y);
     }
   });
