@@ -1,5 +1,5 @@
 console.log("From Satic Assets JS File");
-
+console.log("New Chnage For Github!");
 const weatherForm = document.querySelector("form"); //select the html element youre trying to work with
 const search = document.querySelector("input"); //we want to grab the value the user enetered
 const messageOne = document.querySelector("#message-1");
